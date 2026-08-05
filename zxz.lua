@@ -361,10 +361,9 @@ function loadMainHub()
         end
     end)
 
-    print("[Procurados Engine]: Loaded successfully!")
+    print("[Procurados Skinhub]: Loaded successfully!")
 end
 
 print("Procurados Engine - Key System loaded")
 print("Hub Key: Coffy")
 print("Tecla do Hub: K")
-print("Tecla do ESP: U")
