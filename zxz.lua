@@ -9,7 +9,7 @@ local white = Color3.fromRGB(255, 255, 255)
 local hairCol = Color3.fromRGB(255, 255, 255)
 local skinCol = Color3.fromRGB(255, 219, 172)
 
-local Key = "COFFY"
+local Key = "BITCH"
 local HubKey = Enum.KeyCode.K
 
 -- ==================== KEY SYSTEM ====================
