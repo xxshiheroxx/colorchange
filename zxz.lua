@@ -1,10 +1,10 @@
--- ==================== PROCURADOS ENGINE ====================
+-- ==================== RCSTORE COLOR TOOL ====================
 local ts = game:GetService("TweenService")
 local uis = game:GetService("UserInputService")
 local plr = game:GetService("Players").LocalPlayer
 local RunService = game:GetService("RunService")
 
-local pink = Color3.fromRGB(220, 0, 0)
+local blue = Color3.fromRGB(0, 170, 255)
 local white = Color3.fromRGB(255, 255, 255)
 local hairCol = Color3.fromRGB(255, 255, 255)
 local skinCol = Color3.fromRGB(255, 219, 172)
@@ -14,7 +14,7 @@ local HubKey = Enum.KeyCode.K
 
 -- ==================== KEY SYSTEM ====================
 local keyGui = Instance.new("ScreenGui")
-keyGui.Name = "ProcuradosKeySystem"
+keyGui.Name = "RCStoreKeySystem"
 keyGui.ResetOnSpawn = false
 keyGui.Parent = plr:WaitForChild("PlayerGui")
 
@@ -28,8 +28,8 @@ Instance.new("UICorner", keyFrame).CornerRadius = UDim.new(0, 16)
 local title = Instance.new("TextLabel")
 title.Size = UDim2.new(1, 0, 0, 50)
 title.BackgroundTransparency = 1
-title.Text = "PROCURADOS ENGINE"
-title.TextColor3 = pink
+title.Text = "RCSTORE COLOR TOOL"
+title.TextColor3 = blue
 title.TextSize = 24
 title.Font = Enum.Font.GothamBold
 title.Parent = keyFrame
@@ -47,7 +47,7 @@ Instance.new("UICorner", keyBox).CornerRadius = UDim.new(0, 10)
 local submitBtn = Instance.new("TextButton")
 submitBtn.Size = UDim2.new(0.6, 0, 0, 40)
 submitBtn.Position = UDim2.new(0.2, 0, 0.65, 0)
-submitBtn.BackgroundColor3 = pink
+submitBtn.BackgroundColor3 = blue
 submitBtn.Text = "CONFIRMAR"
 submitBtn.TextColor3 = white
 submitBtn.Font = Enum.Font.GothamBold
@@ -67,14 +67,14 @@ end)
 -- ==================== MAIN HUB ====================
 function loadMainHub()
     local sgui = Instance.new("ScreenGui")
-    sgui.Name = "ProcuradosEngine"
+    sgui.Name = "RCStoreColorTool"
     sgui.ResetOnSpawn = false
     sgui.Parent = game:GetService("CoreGui") or plr.PlayerGui
 
     local main = Instance.new("Frame")
     main.Size = UDim2.new(0, 720, 0, 520)
     main.Position = UDim2.new(0.5, -340, 0.5, -240)
-    main.BackgroundColor3 = Color3.fromRGB(8, 8, 14)
+    main.BackgroundColor3 = Color3.fromRGB(15, 20, 35)
     main.Active = true
     main.Draggable = true
     main.Parent = sgui
@@ -85,7 +85,7 @@ function loadMainHub()
     glow.Position = UDim2.new(0, -20, 0, -20)
     glow.BackgroundTransparency = 1
     glow.Image = "rbxassetid://5028857644"
-    glow.ImageColor3 = pink
+    glow.ImageColor3 = blue
     glow.ImageTransparency = 0.85
     glow.Parent = main
 
@@ -107,7 +107,7 @@ function loadMainHub()
     logo.Size = UDim2.new(0, 300, 0, 50)
     logo.Position = UDim2.new(0, 25, 0, 15)
     logo.BackgroundTransparency = 1
-    logo.Text = "PROCURADOS ENGINE"
+    logo.Text = "RCSTORE COLOR TOOL"
     logo.TextColor3 = white
     logo.TextSize = 30
     logo.Font = Enum.Font.GothamBlack
@@ -118,7 +118,7 @@ function loadMainHub()
     panel.Size = UDim2.new(0.92, 0, 0.78, 0)
     panel.BackgroundTransparency = 1
     panel.ScrollBarThickness = 6
-    panel.ScrollBarImageColor3 = pink
+    panel.ScrollBarImageColor3 = blue
     panel.CanvasSize = UDim2.new(0,0,0,1100)
     panel.Parent = main
 
@@ -130,7 +130,7 @@ function loadMainHub()
         l.Position = UDim2.new(0, 10, 0, y)
         l.BackgroundTransparency = 1
         l.Text = text
-        l.TextColor3 = pink
+        l.TextColor3 = blue
         l.TextSize = 18
         l.Font = Enum.Font.GothamBold
         l.TextXAlignment = Enum.TextXAlignment.Left
@@ -352,18 +352,13 @@ function loadMainHub()
 
 
 
-    btn("CREDITS", function()
+    btn("💎 JOIN RCSTORE", function()
         if setclipboard then
-            setclipboard("https://guns.lol/coffy")
-        end
-        if syn and syn.request then
-            syn.request({Url = "https://guns.lol/coffy", Method = "GET"})
+            setclipboard("https://discord.gg/kTSfdXR7et")
         end
     end)
 
     print("[Procurados Skinhub]: Loaded successfully!")
 end
 
-print("Procurados Engine - Key System loaded")
-print("Hub Key: Coffy")
 print("Tecla do Hub: K")
