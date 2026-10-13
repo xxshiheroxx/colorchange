@@ -1,4 +1,4 @@
--- ==================== RCSTORE COLOR TOOL ====================
+-- ==================== PROCURADOS COLOR CHANGE ====================
 local ts = game:GetService("TweenService")
 local uis = game:GetService("UserInputService")
 local plr = game:GetService("Players").LocalPlayer
@@ -14,7 +14,7 @@ local HubKey = Enum.KeyCode.K
 
 -- ==================== KEY SYSTEM ====================
 local keyGui = Instance.new("ScreenGui")
-keyGui.Name = "RCStoreKeySystem"
+keyGui.Name = "ProcuradosColorChangeKeySystem"
 keyGui.ResetOnSpawn = false
 keyGui.Parent = plr:WaitForChild("PlayerGui")
 
@@ -28,7 +28,7 @@ Instance.new("UICorner", keyFrame).CornerRadius = UDim.new(0, 16)
 local title = Instance.new("TextLabel")
 title.Size = UDim2.new(1, 0, 0, 50)
 title.BackgroundTransparency = 1
-title.Text = "RCSTORE COLOR TOOL"
+title.Text = "PROCURADOS COLOR CHANGE"
 title.TextColor3 = blue
 title.TextSize = 24
 title.Font = Enum.Font.GothamBold
@@ -67,7 +67,7 @@ end)
 -- ==================== MAIN HUB ====================
 function loadMainHub()
     local sgui = Instance.new("ScreenGui")
-    sgui.Name = "RCStoreColorTool"
+    sgui.Name = "ProcuradosColorChange"
     sgui.ResetOnSpawn = false
     sgui.Parent = game:GetService("CoreGui") or plr.PlayerGui
 
@@ -107,7 +107,7 @@ function loadMainHub()
     logo.Size = UDim2.new(0, 300, 0, 50)
     logo.Position = UDim2.new(0, 25, 0, 15)
     logo.BackgroundTransparency = 1
-    logo.Text = "RCSTORE COLOR TOOL"
+    logo.Text = "PROCURADOS COLOR CHANGE"
     logo.TextColor3 = white
     logo.TextSize = 30
     logo.Font = Enum.Font.GothamBlack
